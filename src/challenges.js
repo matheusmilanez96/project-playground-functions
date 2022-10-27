@@ -1,6 +1,6 @@
 // Desafio 1
 function compareTrue() {
-  // seu código aqui
+  // começando o projeto
 }
 
 // Desafio 2
