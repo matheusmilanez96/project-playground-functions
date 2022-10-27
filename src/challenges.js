@@ -23,9 +23,7 @@ function concatName(array) {
 }
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
-}
+const footballPoints = (wins, ties) => wins * 3 + ties;
 
 // Desafio 6
 function highestCount() {
