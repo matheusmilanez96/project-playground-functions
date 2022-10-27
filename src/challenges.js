@@ -1,11 +1,5 @@
 // Desafio 1
-function compareTrue(a, b) {
-  if (a && b) {
-    return true;
-  } else {
-    return false;
-  }
-}
+const compareTrue = (a, b) => ((a && b) ? true : false);
 
 // Desafio 2
 function calcArea(base, height) {
@@ -47,26 +41,26 @@ function catAndMouse(mouse, cat1, cat2) {
   let dist1 = Math.abs(mouse - cat1);
   let dist2 = Math.abs(mouse - cat2);
   if (dist1 < dist2) {
-    return `cat1`
-  } else if (dist1 > dist2) {
-    return `cat2`
-  } else {
-    return `os gatos trombam e o rato foge`
+    return 'cat1';
   }
+  if (dist1 > dist2) {
+    return 'cat2';
+  }
+  return 'os gatos trombam e o rato foge';
 }
 
 // Desafio 8
 function fizzBuzz(array) {
-  const novoArray = []
+  const novoArray = [];
   for (let i in array) {
     if (array[i] % 3 === 0 && array[i] % 5 === 0) {
-      novoArray.push(`fizzBuzz`);
+      novoArray.push('fizzBuzz');
     } else if (array[i] % 3 === 0 && array[i] % 5 !== 0) {
-      novoArray.push(`fizz`);
+      novoArray.push('fizz');
     } else if (array[i] % 3 !== 0 && array[i] % 5 === 0) {
-      novoArray.push(`buzz`);
+      novoArray.push('buzz');
     } else {
-      novoArray.push(`bug!`);
+      novoArray.push('bug!');
     }
   }
   return novoArray;
@@ -74,7 +68,7 @@ function fizzBuzz(array) {
 
 // Desafio 9
 function encode(frase) {
-  let novaFrase = "";
+  let novaFrase = '';
   for (let i in frase) {
     if (frase[i] === 'a') {
       novaFrase = novaFrase.concat('1');
@@ -116,16 +110,16 @@ function decode(frase) {
 function techList(array, nome) {
   const objetos = [];
   let sortedArray = array.sort();
-  if (sortedArray.length == 0) {
-    return `Vazio!`
+  if (sortedArray.length === 0) {
+    return 'Vazio!';
   }
   for (let i in sortedArray) {
     objetos.push(
       {
         tech: sortedArray[i],
         name: nome,
-      }
-    )
+      },
+    );
   }
   return objetos;
 }
