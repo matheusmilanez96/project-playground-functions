@@ -73,11 +73,43 @@ function fizzBuzz(array) {
 }
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(frase) {
+  let novaFrase = "";
+  for (let i in frase) {
+    if (frase[i] === 'a') {
+      novaFrase = novaFrase.concat('1');
+    } else if (frase[i] === 'e') {
+      novaFrase = novaFrase.concat('2');
+    } else if (frase[i] === 'i') {
+      novaFrase = novaFrase.concat('3');
+    } else if (frase[i] === 'o') {
+      novaFrase = novaFrase.concat('4');
+    } else if (frase[i] === 'u') {
+      novaFrase = novaFrase.concat('5');
+    } else {
+      novaFrase = novaFrase.concat(frase[i]);
+    }
+  }
+  return novaFrase;
 }
-function decode() {
-  // seu código aqui
+function decode(frase) {
+  let novaFrase = "";
+  for (let i in frase) {
+    if (frase[i] === '1') {
+      novaFrase = novaFrase.concat('a');
+    } else if (frase[i] === '2') {
+      novaFrase = novaFrase.concat('e');
+    } else if (frase[i] === '3') {
+      novaFrase = novaFrase.concat('i');
+    } else if (frase[i] === '4') {
+      novaFrase = novaFrase.concat('o');
+    } else if (frase[i] === '5') {
+      novaFrase = novaFrase.concat('u');
+    } else {
+      novaFrase = novaFrase.concat(frase[i]);
+    }
+  }
+  return novaFrase;
 }
 
 // Desafio 10
