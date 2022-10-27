@@ -87,7 +87,7 @@ function encode(frase) {
   return novaFrase;
 }
 function decode(frase) {
-  let novaFrase = "";
+  let novaFrase = '';
   for (let i in frase) {
     if (frase[i] === '1') {
       novaFrase = novaFrase.concat('a');
