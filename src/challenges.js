@@ -113,8 +113,21 @@ function decode(frase) {
 }
 
 // Desafio 10
-function techList() {
-  // seu código aqui
+function techList(array, nome) {
+  const objetos = [];
+  let sortedArray = array.sort();
+  if (sortedArray.length == 0) {
+    return `Vazio!`
+  }
+  for (let i in sortedArray) {
+    objetos.push(
+      {
+        tech: sortedArray[i],
+        name: nome,
+      }
+    )
+  }
+  return objetos;
 }
 
 module.exports = {
